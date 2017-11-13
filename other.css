@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding:0;
+}
+#saolei{
+  margin:20px auto;
+  border:1px solid #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#saolei p{
+  width:18px;
+  height:18px;
+  line-height: 20px;
+  border:1px solid #333;
+  font-size: 12px;
+  float:left;
+  position:relative;
+  background-color: #ccc;
+  text-align: center;
+  color:#fff;
+}
+#saolei p::after{
+  content:attr(data-num);
+}
+#saolei p span{
+  position:absolute;
+  left:-1px;
+  top:-1px;
+  width:18px;
+  height:18px;
+  border:solid 1px #333;
+  background-color: #999;
+  z-index:1;
+}
+.main{
+
+}
+#saolei p .yellow{
+  background-color:yellow;
+}
+#saolei .liang{
+  background-color: #eee;
+}
+.head,.footer{
+  text-align: center;
+}
+.butt{
+    font-size: 15px;
+
+}
+.btn{
+  line-height: 15px;
+  border:solid 1px #eee;
+  box-shadow: 2px 0px 1.5px rgba(255,255,255,.6);
+  border-radius: 4px;
+  background-color: green;
+  padding:10px 15px;
+  color:black;
+  cursor: pointer;
+}
+.markNum{
+  font-size: 12px;
+  color:red;
+}
